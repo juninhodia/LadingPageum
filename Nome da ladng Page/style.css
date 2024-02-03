@@ -2,9 +2,15 @@
 @import url(style/marcasTrabalhadas.css);
 @import url(style/produtoPromocao.css);
 @import url(style/maisVendido.css);
+@import url(style/pagameneto.css);
+@import url(style/RedeSocial.css);
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
 
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
@@ -17,7 +23,7 @@ body{
     --cor-body:#f1f1f1;
     --cor-icon:#272727;
 
-    --cor-primary:#24AD4A;
+    --cor-primary:#499a09;
     --cor-secundary:#30AE24;
     --cor-text:#3f4a3c;
     --cor-sub-titulo:#a3af9e;
@@ -27,12 +33,14 @@ body{
 }
 
 .titulo {
+    padding: 1rem;
     font-family: var(--font-secundary);
     font-weight: 700;
     font-size: 1.5rem;
-    color: var(--cor-sub-titulo);
+    color: var(--cor-primary);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     position: relative; /* Necessário para o efeito de sublinhado */
